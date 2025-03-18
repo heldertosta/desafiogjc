@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: ..  # Contexto é DesafioGJC/
+      dockerfile: desafio/Dockerfile
+    ports:
+      - "3000:3000"  # Frontend na porta 3000
+      - "8080:8080"  # Backend na porta 8080
+    container_name: desafio-app
